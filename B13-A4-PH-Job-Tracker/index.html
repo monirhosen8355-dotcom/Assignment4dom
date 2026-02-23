@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <section class="dashboard-section">
+    <h1 class="title">Job Application Tracker</h1>
+
+    <div class="dashboard-cards">
+      <div class="dash-card">
+        <p class="dash-label">Total</p>
+        <h2 id="total-count">8</h2>
+      </div>
+
+      <div class="dash-card">
+        <p class="dash-label">Interview</p>
+        <h2 id="interview-count" class="green">0</h2>
+      </div>
+
+      <div class="dash-card">
+        <p class="dash-label">Rejected</p>
+        <h2 id="rejected-count" class="red">0</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="jobs-section">
+
+    <div class="jobs-header">
+      <h2>Available Jobs</h2>
+      <p><span id="available-count">8</span> jobs</p>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" onclick="showTab('all', this)">All</button>
+      <button class="tab-btn" onclick="showTab('interview', this)">Interview</button>
+      <button class="tab-btn" onclick="showTab('rejected', this)">Rejected</button>
+    </div>
+
+    <div id="job-container"></div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, id?</p>
+  </section>
+  <script src="script.js"></script>
+
+</body>
+</html>
